@@ -1,0 +1,25 @@
+.reference {
+  grid-column: 2 / 3;
+  grid-row: 4;
+  margin-top: 20px;
+  &__people {
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    @include black-bars;
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-around;
+    color: $main-font-color-one;
+    margin-block: 10px;
+  }
+}
+
+@media (max-width: 934px) {
+  .reference {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}

@@ -1,0 +1,46 @@
+@mixin contacts-headers {
+  margin: 20px auto;
+  padding-block: 10px;
+  text-align: center;
+  color: $main-font-color-two;
+  border: 2px solid $main-color-one;
+  border-radius: $border-radius-contacts;
+  max-width: 60%;
+  text-transform: $text-uppercase;
+}
+
+@mixin before-header($content) {
+  content: $content;
+  margin-right: 10px;
+  background-color: $main-color-one;
+  border-radius: $border-radius-numeration;
+  padding: 7px 14px;
+  color: $main-font-color-two;
+}
+
+@mixin span-dots {
+  background-color: $main-color-one;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: $border-radius-numeration;
+  transform: translateY(90%);
+  margin-inline: 5px;
+}
+
+@mixin black-bars {
+  background-color: $main-color-two;
+  color: $main-font-color-two;
+  border-top-right-radius: $border-radius-contacts;
+  border-bottom-right-radius: $border-radius-contacts;
+}
+
+@mixin contact-icons {
+  position: relative;
+  color: $main-font-color-two;
+  background-color: $main-color-one;
+  border-bottom-right-radius: $border-radius-contacts;
+  border-top-right-radius: $border-radius-contacts;
+  height: 80%;
+  font-size: 2rem;
+}

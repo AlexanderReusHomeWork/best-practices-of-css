@@ -1,0 +1,24 @@
+.photo {
+  position: relative;
+  background-color: $main-color-one;
+  max-width: 60%;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  border-top-left-radius: $border-radius-numeration;
+  border-top-right-radius: $border-radius-numeration;
+  &__img {
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 934px) {
+  .photo {
+    max-width: 250px;
+    &__img {
+      width: 78%;
+      right: 12%;
+    }
+  }
+}

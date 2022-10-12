@@ -1,0 +1,11 @@
+.contacts {
+  background-color: $main-color-two;
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+
+@media (max-width: 934px) {
+  .contacts {
+    grid-row: 2;
+  }
+}

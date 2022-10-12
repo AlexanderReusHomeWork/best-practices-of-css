@@ -1,0 +1,37 @@
+.personal-header {
+  display: flex;
+  &__heading {
+    text-transform: $text-uppercase;
+    margin: 0px 5px 10px 22%;
+    &--numberOne {
+      &::before {
+        @include before-header("1");
+      }
+    }
+    &--numberTwo {
+      &::before {
+        @include before-header("2");
+      }
+    }
+    &--numberThree {
+      &::before {
+        @include before-header("3");
+      }
+    }
+  }
+  &__dot {
+    @include span-dots;
+  }
+}
+
+@media (max-width: 934px) {
+  .personal-header {
+    display: block;
+    &__heading {
+      margin-left: 10px;
+    }
+    &__dot {
+      display: none;
+    }
+  }
+}

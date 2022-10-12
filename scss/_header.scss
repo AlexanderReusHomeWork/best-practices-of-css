@@ -1,0 +1,26 @@
+.header {
+  grid-column: 2/3;
+  text-align: center;
+  &__heading {
+    color: $main-font-color-one;
+    font-size: 2rem;
+    padding-block: 1rem;
+    text-transform: $text-uppercase;
+    font-weight: 400;
+  }
+  &__paragraph {
+    color: $main-font-color-two;
+    background-color: $main-color-one;
+    font-size: 2.3rem;
+    padding-block: 0.8rem;
+    text-transform: $text-uppercase;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 934px) {
+  .header {
+    grid-column: 1;
+    /*   grid-row: 1 / 2; */
+  }
+}

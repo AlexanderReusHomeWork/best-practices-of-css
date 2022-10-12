@@ -1,0 +1,6 @@
+.contacts-heading {
+  @include contacts-headers;
+  &:hover {
+    background-color: $main-color-one;
+  }
+}
